@@ -1,0 +1,20 @@
+class Solution{
+    public static void main(String[] args){
+        int num=49,r,result=0;
+        while(num>0)
+        {
+            r=num%10;
+            result=result+r;
+            num=num/10;
+        }
+        System.out.println("Result:"+result);
+        int temp=0;
+        while(result>0)
+        {
+            r=result%10;
+            temp=temp+r;
+            result=result/10;
+        }
+        System.out.println("Temp:"+temp);        
+    }
+}
